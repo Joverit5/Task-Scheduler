@@ -1,36 +1,58 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# Task Scheduler
+
+A web application for optimally scheduling tasks based on their deadlines and benefits using a greedy algorithm approach.
+
+🔗 [Live Demo](https://taskscheduler-0.vercel.app)
+
+## Features
+
+- ✨ Add tasks with name, deadline, and benefit values
+- 📅 Calendar-based deadline selection
+- 🔄 Automatic task scheduling optimization
+- 📊 View total benefit calculation
+- 📱 Responsive design
+- 🌐 Spanish date localization
+
+## How It Works
+
+The application uses a greedy algorithm to schedule tasks optimally:
+
+1. Tasks are sorted by benefit (highest to lowest)
+2. Each task is scheduled as late as possible within its deadline
+3. The algorithm maximizes total benefit while respecting deadlines
+
+## Technology Stack
+
+- Next.js 13+ with App Router
+- React 18
+- TypeScript
+- Tailwind CSS
+- shadcn/ui components
+- date-fns for date manipulation
 
 ## Getting Started
 
-First, run the development server:
+1. Clone the repository
+2. Install dependencies:
+   ```bash
+   npm install
+   ```
+3. Run the development server:
+   ```bash
+   npm run dev
+   ```
+4. Open [http://localhost:3000](http://localhost:3000) in your browser
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+## Deployment
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+This project is deployed on [Vercel](https://vercel.com) and can be accessed at [taskscheduler-0.vercel.app](https://taskscheduler-0.vercel.app)
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+## Contributors
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+- Isabella Sofía Arrieta Guardo
+- José Fernando González Ortiz
+- Daniel David Herrera Acevedo
 
-## Learn More
+## License
 
-To learn more about Next.js, take a look at the following resources:
-
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
-
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
-
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+MIT License - feel free to use this project for your own purposes.
